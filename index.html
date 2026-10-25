@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supercars Olivos</title>
+    <link rel="icon" href="icono.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="icono.png" alt="Supercars Olivos" class="logo">
+            
+            <nav class="nav"> 
+                <a href="#inicio">Inicio</a>
+                <a href="#superdeportivos">Premium</a>
+                <a href="#deportivos">Deportivos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1>Encontrá tu<br>próximo auto.</h1>
+
+                <a href="#superdeportivos" class="hero-button">
+                    Explorar catálogo
+                </a>
+            </div>
+        </section>
+
+
+
+
+        <!-- Premium y superdeportivos-->
+        <section class="section" id="superdeportivos">
+            <div class="container">
+
+                <p class="subtitle">EXCLUSIVIDAD</p>
+                <h2>Premium / Superdeportivos</h2>
+
+                <div class="cars">
+
+                    <article class="car">
+                        <img src="premiums-y-superdeportivos/aston-martin-db11.png" alt="Aston Martin DB11">
+                        <h3>Aston Martin DB11</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="premiums-y-superdeportivos/audi-r8.png" alt="Audi R8">
+                        <h3>Audi R8</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="premiums-y-superdeportivos/chevrolet-corvette.png" alt="Chevrolet Corvette">
+                        <h3>Chevrolet Corvette</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="premiums-y-superdeportivos/ford-mustang.png" alt="Ford Mustang">
+                        <h3>Ford Mustang</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="premiums-y-superdeportivos/mercedes-benz-amg.png" alt="Mercedes-Benz AMG">
+                        <h3>Mercedes-Benz AMG</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="premiums-y-superdeportivos/porsche-911.png" alt="Porsche 911">
+                        <h3>Porsche 911</h3>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Deportivos-->
+        <section class="section" id="deportivos">
+            <div class="container">
+
+                <p class="subtitle">OFERTAS</p>
+                <h2>Nobles / Deportivos</h2>
+
+                <div class="cars">
+
+                    <article class="car">
+                        <img src="nobles-y-deportivos/audi-a3.png" alt="Audi A3">
+                        <h3>Audi A3</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="nobles-y-deportivos/chevrolet-cruze.png" alt="Chevrolet Cruze">
+                        <h3>Chevrolet Cruze</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="nobles-y-deportivos/fiat-kronnos.png" alt="Fiat Cronos">
+                        <h3>Fiat Cronos</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="nobles-y-deportivos/nissan-sentra.png" alt="Nissan Sentra">
+                        <h3>Nissan Sentra</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="nobles-y-deportivos/toyota-corolla.png" alt="Toyota Corolla">
+                        <h3>Toyota Corolla</h3>
+                    </article>
+
+                    <article class="car">
+                        <img src="nobles-y-deportivos/volkswagen-golf.png" alt="Volkswagen Golf">
+                        <h3>Volkswagen Golf</h3>
+                    </article>
+
+                </div>
+            </div> 
+        </section>
+
+    </main>
+
+    <!--pie de pagina-->
+
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <p class="footer-frase">Te acompañamos en cada momento.</p>
+
+            <div class="footer-contacto">
+                <p>Teléfono: 11 1234-5678</p>
+                <p>contacto@supercarsolivos.com</p>
+                <p>Olivos, Buenos Aires</p>
+            </div>
+
+            <p class="copyright">2026 Supercars Olivos</p>
+        </div>
+    </footer>
+
+    <!--ventana emergente para el auto seleccionado-->
+    <div class="auto-modal" id="auto-modal">
+        <div class="modal-contenido">
+            <button class="cerrar-modal" id="cerrar-modal">×</button>
+
+            <img src="" alt="Imagen del vehículo" id="modal-imagen">
+
+            <div class="modal-info">
+                <h2 id="modal-nombre"></h2>
+                <p id="modal-descripcion"></p>
+                <a href="#contacto" class="hero-button" id="modal-consultar">
+                    Consultar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
